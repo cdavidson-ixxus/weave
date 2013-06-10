@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <mvc:annotation-driven/>
+    
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+
+    <context:component-scan base-package="com.pearson.chaski.ui"/>
+    
+        
+    <bean id="searchControllerJSON" class="com.pearson.chaski.ui.controller.SearchControllerJSON">
+        <property name="chaskiSearchURL" value="${chaski.search.baseUrl}" />
+    </bean>
+    
+    <bean id="assetControllerJSON" class="com.pearson.chaski.ui.controller.AssetControllerJSON">
+        <property name="chaskiAssetURL" value="${chaski.asset.baseUrl}" />
+    </bean>
+    
+    <bean id="collectionController" class="com.pearson.chaski.ui.controller.collections.CollectionController">
+        <property name="chaskiAssetURL" value="${chaski.asset.baseUrl}" />
+        <property name="collectionService" ref="collectionService"></property>
+    </bean>
+    <bean id="collectionService" class="com.pearson.chaski.ui.service.CollectionServiceDB"></bean>
+    
+    <bean id="userController" class="com.pearson.chaski.ui.controller.UserController">
+        <property name="userService" ref="userService"></property>
+    </bean>
+    <bean id="userService" class="com.pearson.chaski.ui.service.UserServiceDB"></bean>
+
+    
+</beans>

@@ -1,0 +1,1448 @@
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+   
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Set default font family to sans-serif.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    background: #fff; /* 1 */
+    color: #000; /* 2 */
+    font-family: sans-serif; /* 3 */
+    -ms-text-size-adjust: 100%; /* 4 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+.topics a:link { color: #000; }
+.topics a:visited { color: #000; }
+.topics a:hover { color: #2c4e57; }
+.topics a:active { color: #000; }
+
+.results-pagination a:link, .dym-list a:link, .categories a:link { color: #2c4e57; }
+.results-pagination a:visited, .dym-list a:visited, .categories a:visited{ color: #2c4e57; }
+.results-pagination a:hover, .dym-list a:hover, .categories a:hover { color: #2ba6cb; }
+.results-pagination a:active, .dym-list a:active, .categories a:focus { color: #2ba6cb; }
+
+.results-header a:link { color: #2c4e57; }
+.results-header a:visited { color: #2c4e57; }
+.results-header a:hover { color: #2ba6cb; }
+.results-header a:focus { color: #2c4e57; }
+
+.detail-metadata a:link, .results-text ul li a:link, .results-data ul li a:link { color: #1021ce; }
+.detail-metadata a:visited, .results-text ul li a:visited, .results-data ul li a:visited { color: #1021ce; }
+.detail-metadata a:hover, .results-text ul li a:hover, .results-data ul li a:hover { color: #1021ce; text-decoration: underline; }
+.detail-metadata a:active, .results-text ul li a:active, .results-data ul li a:active { color: #1021ce; }
+
+.footer-navigation a:link { color: #6bb9c6; }
+.footer-navigation a:visited { color: #6bb9c6; }
+.footer-navigation a:hover { color: #84f5fb; }
+.footer-navigation a:active { color: #6bb9c6; }
+
+.pagination .current-page a:link { color: #888; }
+.pagination .current-page a:visited { color: #888; }
+.pagination .current-page:hover a { color: #888; text-decoration: none; }
+
+.pagination li a:link { color: #1c1e2b; text-decoration: none; background: transparent;}
+.pagination li a:visited { color: #1c1e2b; text-decoration: none; background: transparent;}
+.pagination li a:hover { color: #1c1e2b; background: transparent;}
+.pagination li:hover a { background: transparent; text-decoration: underline; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+    max-height: 100%;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: none;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+	overflow: auto;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ==========================================================================
+   General
+   ========================================================================== */
+
+.user-welcome {
+	font-size: 0.75em;
+	color: #ccc;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+.collection-hero ul > li:nth-child(odd), .results-images ul > li:nth-child(odd), .results-videos ul > li:nth-child(odd)  {
+	background-color: #ccc;
+}
+
+.collection-hero ul > li:nth-child(even), .results-images ul > li:nth-child(even), .results-videos ul > li:nth-child(odd) {
+	background-color: #999;
+}
+
+.collection-hero ul li img, .results ul li img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ==========================================================================
+   HP Layout
+   ========================================================================== */
+
+.home-page .row {
+	margin-bottom: 3.125em;
+}
+
+.home-page .collection-left {
+	padding-right: 1.5625em
+}
+
+.home-page .collection-right {
+	padding-left: 1.5625em
+	
+}
+
+.penguins-collection-overlay {
+	position: absolute;
+	top: 0;
+	right: 0.625em;
+	display: none;
+	height: 14.8125em;
+}
+
+.collection-hero ul {
+	margin: 0;
+}
+
+.collections-pagination-container {
+	color: #1c1e2b;
+}
+
+.pagination ul li {
+	padding: 0 0.5em;
+	margin: 0;
+}
+
+.pagination li a {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.pagination li current {
+	color: #ccc;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+	background: #1c1e2b;
+}
+   
+.footer-navigation {
+	overflow: hidden;
+	padding-left: 0;
+}
+   
+.footer-navigation ul {
+	list-style: none;
+	margin: 0;
+	line-height: 2.1875em;
+}
+
+.footer-navigation ul li {
+	float: left;
+	padding-right: 3em;
+	font-size: 0.625em;
+}
+
+.pearson-logo {
+	padding: 0.5625em 0 0.5625em 4em;
+	float: right;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+   
+header {
+	background: #1c1e2b;
+}
+
+.search-bar-container {
+	padding: 1.5em 0.625em;
+}
+
+.search-bar-nav {
+	float: right;
+	color: #fff;
+}
+
+.search-bar-nav ul {
+	list-style: none;
+}
+
+.search-bar-nav ul li {
+	float: left;
+	padding-left: 1em;
+}
+
+.search-bar-nav form {
+	margin: 0;
+}
+
+.search-bar-nav input {
+	height: 1.5em;
+	margin-bottom: 0.375em;
+}
+
+.search-bar-nav button {
+	height: 1.5em;
+	font-size: 0.875em;
+	line-height: 0.7em;
+}
+
+.search-bar-nav ul img {
+	padding-bottom: 0.25em;
+}
+
+.search-bar-nav-container {
+	padding-right: 0;
+}
+
+.logo p {
+	color: #84f5fb;
+	margin-bottom: 0;
+	line-height: 1em;
+}
+
+.logo .logo-title {
+	font-size: 2.4em;
+	font-weight: bold;
+	line-height: 0.8em;
+	margin-bottom: 0.125em;
+}
+
+.logo {
+	padding-left: 0;
+}
+
+.logo .logo-description {
+	font-size: 0.85em;
+}
+
+.search-bar .search-field, .search-bar .search-type, .search-bar .search-submit {
+	float: left;
+	border: none;
+	height: 100%
+}
+
+.search-bar .search-field {
+	width: 64%;
+	margin-bottom: 0;
+	padding: 0 0.75em;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.search-bar .search-type {
+	width: 20%;
+	font-size: 0.875em;
+	/*padding: 1em 0.5em 1em 0;*/
+}
+
+.search-bar .search-submit {
+	width: 3.125em;
+	padding: 0;
+	background: url('../img/search-icon.gif') no-repeat;
+}
+
+.search-bar form {
+	height: 3.125em;
+	margin-bottom: 0;
+}
+
+.logo-hover {
+	/*display: none;*/
+	position: absolute;
+	color: #000;
+	background: #ccc;
+	z-index: 98;
+	top: 50px;
+	left: 170px;
+	width: 340px;
+	padding: 20px 20px 10px 20px;
+	border-radius: 5px;
+	box-shadow: 7px 7px 2px #999;
+	display: none;
+}
+
+.logo-hover ul {
+	margin: 0 0 0 20px;
+}
+
+.logo-hover ul li {
+	padding-bottom: 10px;
+}
+
+/* ==========================================================================
+   HP Topics & Featured
+   ========================================================================== */
+
+.topics-featured-container {
+	background: #6bb9c6;
+	overflow: hidden;
+	padding: 1.25em 1.25em 1em;
+}
+
+.topics-featured-container .columns {
+	padding: 0;
+}
+
+.topics ul {
+	list-style-type: none;
+	list-style-image: url('../img/magnifying-glass.png');
+	list-style-position: outside;
+	padding-left: 1.5em;
+}
+
+.topics li {
+	width: 50%;
+	float: left;
+	padding-right: 1.75em;
+}
+
+/* Something like this could be a way to target odd or even items only to shift right hand side across */
+/*.topics ul li:nth-of-type(even) {
+	padding-right: 1.75em;
+}*/
+
+.topics li span {
+	color: #2c4e57;
+}
+
+.topics h3 {
+	color: #2c4e57;
+	font-family: arial;
+	margin-top: 0;
+	line-height: 0.9em;
+}
+
+.featured img {
+	float: right;
+}
+
+/* ==========================================================================
+   HP Collections & Pagination
+   ========================================================================== */
+
+/*.home-page .collections-row {
+	padding-right: 0.4375em;
+}*/
+
+/*.collection-count-container {
+	border: 1px solid blue;
+	position: absolute;
+	top: 0;
+	right: 0.625em;                    UNCOMMENT TO SHOW BORDER NOT WORKING
+	width: 58.75em;
+	height: 7.8125em;
+	display: none;
+}*/
+
+.collection-count {
+	background: #1c1e2b;
+	color: #fff;
+	width: 12em;
+	padding: 0.625em;
+	position: absolute;  /* COMMENT OUT TO DEMO BORDER NOT WORKING */
+	top: 0;              /* COMMENT OUT TO DEMO BORDER NOT WORKING */
+	right: 0.625em;      /* COMMENT OUT TO DEMO BORDER NOT WORKING */
+	display: none;       /* COMMENT OUT TO DEMO BORDER NOT WORKING */
+	height: 11.75em;
+	float: right;
+}
+
+.collection-count p {
+	font-size: 0.875em;
+}
+
+.collection-count .update-date {
+	font-weight: bold;
+}
+
+.collection-count ul {
+	list-style: none;
+	list-style-position: inside;
+	margin-bottom: 0;
+}
+
+.collection-count .collection-total-assets {
+	margin-top: 1em;
+}
+
+.collection-count .collection-total-count {
+	font-weight: bold;
+}
+
+.collection-count .count-icon-image {
+	list-style-image: url('../img/count-icon-image.png');
+}
+
+.collection-count .count-icon-video {
+	list-style-image: url('../img/count-icon-video.png');
+}
+
+.collection-count .count-icon-text {
+	list-style-image: url('../img/count-icon-text.png');
+}
+
+.collection-hero ul {
+	list-style: none;
+}
+
+.collection-hero ul li {
+	float: left;
+	width: 5.875em;
+	height: 5.875em;
+}
+
+.collection-title {
+	background: #1c1e2b;
+	color: #d2d2d5;
+	font-size: 1.75em;
+}
+
+.collection-title p {
+	padding: 0 0.625em;
+	margin: 0;
+	clear: both;
+	line-height: 1.75em;
+}
+
+.collections-pagination-container {
+	background: #d2d2d5;
+	overflow: hidden;
+	padding: 0.25em 1.25em;
+}
+
+.collections-total p {
+	margin-bottom: 0;
+}
+
+.collections-total {
+	padding-left: 0;
+}
+
+.home-page .pagination {
+	padding-left: 1.5625em;
+}
+
+.home-page .pagination li {
+	font-size: 1em;
+	padding-right: 0.5em;
+	
+}
+
+/* ==========================================================================
+   RP Filters
+   ========================================================================== */
+   
+.applied-filters-section {
+	background: #ccc;
+
+}
+
+.applied-filters-container {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.applied-filters h4 {
+	float: left;
+	font-size: 0.875em;
+	margin: 0 1.5em 0 0;
+	line-height: 1.6em;
+	color: #2c4e57;
+}
+
+.applied-filters ul {
+	list-style: none;
+	margin: 0;
+}
+
+.applied-filters ul li {
+	float: left;
+	padding-left: 2em;
+	font-size: 0.875em;
+}
+
+.filters {
+	background: #f3f3f3;
+	padding: 0.85em 0 0.85em 0.625em;
+	color: #2c4e57;
+	color: #2c4e57;
+	float: left;
+}
+
+.filters .categories {
+	padding-right: 0.625em;
+}
+
+.filters .categories ul {
+	font-size: 0.75em;
+	list-style: none;
+	list-style-image: url("../img/chevron-icon-left.png");
+	list-style-position: outside;
+}
+
+.filters .categories ul li {
+	line-height: 1.5em;
+}
+
+.count {
+	color: #999;
+}
+
+.cat-level-0 {
+	margin-left: 1.25em;
+}
+
+.cat-level-1 {
+	margin-left: 1.75em;
+}
+
+.cat-level-2 {
+	margin-left: 2.25em;
+}
+
+.cat-level-3 {
+	margin-left: 2.75em;
+}
+
+.cat-level-4 {
+	margin-left: 3.25em;
+}
+
+.filters li {
+	line-height: 1.3125em;
+}
+
+.filter {
+	max-height: 13.75em;
+	overflow: auto;
+}
+
+fieldset legend {
+	font-weight: bold;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+.filters h2 {
+	font-size: 1.25em;
+	color: #2c4e57;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+.filters h3 {
+	font-size: 1em;
+	color: #2c4e57;
+}
+
+.filter input[type="checkbox"], .filter label {
+	margin: 0;
+	color: #2c4e57;
+	font-size: 0.75em;
+}
+
+/* ==========================================================================
+   RP Filter Button
+   ========================================================================== */
+   
+.filter-button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.filter-button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.filter-button:active {
+	position:relative;
+	top:1px;
+}
+
+/* ==========================================================================
+   RP Layout
+   ========================================================================== */
+
+.main-row {
+	margin-bottom: 2.5em;
+}
+
+.search-header {
+	padding: 0 0.625em 1.25em 0;
+}
+
+.results-container {
+	padding: 0 0.3125em 0 0.9375em;
+}
+
+/*.results-quickview-container {
+	display: none;
+}*/
+
+.search-header h1 {
+	margin: 0.5em 0;
+	font-size: 1.5em;
+}
+
+.dym-container, .sort-container {
+	font-size: 0.875em;
+}
+
+.dym-container p {
+	float: left;
+	margin: 0;
+	padding-right: 0.5em;
+}
+
+.dym-container ul {
+	list-style: none;
+}
+
+.dym-container ul li {
+	float: left;
+	padding-right: 0.5em;
+	font-style: italic;
+}
+
+.dym-list {
+	margin: 0;
+}
+
+.sort-container p {
+	float: left;
+	width: 30%;
+	margin: 0;
+}
+
+.sort-container select {
+	float: right;
+	width: 70%
+}
+
+hr {
+	margin: 0.625em 0.625em 0.625em 0;
+}
+
+.results hr {
+	margin-top: 0;
+}
+
+.results-images, .results-videos, .results-docs, .results-text, .results-data {
+	/*border-top: 1px solid #a8aaaa;*/		/* Removed to fix border going to far to the right as a result of having to use padding on container to fix inline-block 4px issue */
+}
+
+.results-header {
+	margin-top: 0.75em;
+}
+
+.results p {
+	margin: 0;
+}
+
+.results-docs p {
+	font-size: 0.75em;
+}
+
+.results em {
+	font-style: normal;
+	background: yellow;
+}
+
+.results ul {
+	list-style: none;
+	clear: both;
+	margin-bottom: 0;
+}
+
+.results-images ul li, .results-videos ul li, .results-docs ul li {
+	margin: 0 0.375em 0.625em 0;
+	display: inline-block;
+	width: 7.125em;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.results-text ul li, .results-data ul li {
+	padding-bottom: 0.625em;
+}
+
+/*.results .last-asset {
+	margin-right: -4px;
+}		NOT NEEDED AS ACCOMMODATED INLINE_BLOCK MARING WITH PADDING REDUCTION */
+
+.results h2 {
+	color: #1c1e2b;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.results .results-title {
+	float: left;
+}
+
+.results .results-see-all {
+	float: right;
+	margin-top: 0.7em;
+	margin-right: 0.75em;
+	padding-right: 0.75em;
+	background-image: url("../img/chevron-icon-right.png");
+	background-repeat: no-repeat;
+	background-position: 100%;
+}
+
+.text-title , .data-title {
+	text-decoration: underline;
+}
+
+.text-source, .data-source {
+	font-size: 0.875em;
+	color: #009c31;
+}
+
+.text-summary, .data-summary {
+	font-size: 0.875em;
+}
+
+.results-pagination {
+	float: right;
+	padding-right: 0.625em;
+	font-size: 0.875em;
+	margin-top: 0.5em;
+}
+
+.results-pagination a , .results-pagination span {
+	padding-left: 1em;
+}
+
+/*.results-pagination .previous {
+	margin-right: 0.75em;
+	padding-right: 0.75em;
+	background-image: url("../img/chevron-icon-left.png");
+	background-repeat: no-repeat;
+	background-position: 100%;
+}
+
+.results-pagination .next {
+	margin-right: 0.75em;
+	padding-right: 0.75em;
+	background-image: url("../img/chevron-icon-right.png");
+	background-repeat: no-repeat;
+	background-position: 100%;
+}*		USE THE ABOVE TWO RULES IF ARROWS NEED TO BE CONSISTENT */
+
+/* ==========================================================================
+   Collections
+   ========================================================================== */
+
+.collections-container {
+	padding: 3.5em 0 0 0;
+}
+
+.collections {
+	background: #1c1e2b;
+	color: #fff;
+}
+
+.collections-list {
+	padding: 0.5625em;
+	font-size: 0.875em;
+	background: #323440;
+	border-bottom: 2px solid #fff;
+}
+
+.collections-list h3 {
+	margin-top: 0;
+	color: #fff;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+.current-collection {
+	padding: 0.5625em;
+}
+
+.current-collection form {
+	margin: 0;
+}
+
+.current-collection input {
+	margin: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	padding: 0.25em 0.5em;
+	height: 1.75em;
+	font-size: 0.75em;
+}
+
+.current-collection .collection-name-confirm {
+	margin-top: 0.5em;
+	padding: 0.125em 0.5em 0.125em 0;
+	height: 100%;
+	background-color: transparent;
+	text-decoration: underline;
+	color: #6bb9c6;
+}
+
+.current-collection p {
+	font-size: 0.75em;
+	margin: 0.3125em 0 0 0;
+}
+
+.collection-assets {
+	color: #6bb9c6;
+	font-weight: bold;
+	max-height: 29em;
+	overflow: auto;
+}
+
+.collection-assets::-webkit-scrollbar {
+    width: 13px;
+}
+
+.collection-assets::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    background: #8b8c90;
+}
+ 
+.collection-assets::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: #5c5e67;
+}
+
+.collection-assets::-webkit-scrollbar-button {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+	background: #5c5e67 url('') no-repeat center;
+}
+
+.collection-assets::-webkit-scrollbar-button:vertical:increment {
+    background-image: url(../img/scroll-down.gif);
+    background-repeat: no-repeat;
+}
+
+.collection-assets::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url(../img/scroll-up.gif);
+    background-repeat: no-repeat;
+}
+
+.collection-assets ul {
+	margin: 0;
+	list-style: none;
+}
+
+.collection-assets .collection-asset {
+	clear: both;
+	padding: 0.3125em 0 0.3125em 0.5625em;
+}
+
+
+.collection-assets ul > li:nth-child(odd) {
+	background: #333541;
+}
+
+.collection-assets ul li ul > li:nth-child(odd), .collection-assets ul li ul > li:nth-child(even) {
+	background: transparent;
+}
+
+.collection-assets ul li img {
+	width: 3.125em;
+	float: left;
+	padding-right: 0.5em;
+}
+
+.collection-assets ul li ul li {
+	font-size: 0.75em;
+	line-height: 1.2em;
+}
+
+/*.collections-background {
+	background-image: url('../img/collections-added.png');
+	height: 58.75em;
+	width: 10em;
+}		PUT BACK IN IF USING BACKGROUND IMAGE FOR COLLECTIONS */
+
+/* ==========================================================================
+   Results Dropdown
+   ========================================================================== */
+
+.results-images .quickview-container, .results-videos .quickview-container, .results-docs .quickview-container {
+	background: #31333f;
+	margin: 0 0.625em 0.625em 0;
+	padding: 0.125em;
+	color: #66bbcc;
+	position: relative;
+}
+
+
+/*.quickview-container {
+	display: none;
+}		NOT NEEDED ONCE HTML CODE IS INSERTED VIA JQUERY */
+
+.quickview-image {
+	padding: 0 1.25em 0 0;
+}
+
+.quickview-information {
+	padding: 0;
+	height: 100%
+}
+
+.quickview-information p {
+	font-size: 0.8125em;
+}
+
+.quickview-information img {
+	float: right;
+	padding: 0.375em 0.375em 0 0;
+}
+
+.quickview-metadata {
+	clear: both;
+	border: none;
+	background: none;
+}
+
+.quickview-metadata tr:nth-of-type(even) {
+	background: none;
+}
+
+.quickview-metadata tr td:nth-of-type(even) {
+	font-weight: bold;
+}
+
+.quickview-metadata tr td:nth-of-type(odd) {
+	padding-right: 2em;
+}
+
+.quickview-metadata td {
+	color: inherit;
+	padding: 0 0 0.25em 0;
+}
+
+.detail-button, .add-button, .login-button {
+	font-size: 0.875em;
+	color: white;
+	padding: 0.375em 0.75em;
+	background: #6bb9c6;
+	font-weight: normal;
+}
+
+button:hover {
+	background-color: #369CB5;
+}
+
+.detail-button {
+	margin-right: 0.75em;
+}
+
+.quickview-information h2 {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: normal;
+	padding: 0.5em 0;
+	width: 90%;
+	float: left;
+}
+
+/*.test {							THE DROPDOWN FROM FIDDLE STACK O ANSWER
+    display: inline-block;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+.expander {
+    display: none;
+    background: coral;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 6px;
+    float: left;
+    cursor: default;
+}*/
+	
+/* ==========================================================================
+   DP Layout
+   ========================================================================== */
+
+.header-row, .detail-body {
+	margin-bottom: 3.125em;
+}
+
+.detail-left {
+	padding-right: 0.9375em;
+}
+   
+.detail-page .collections-container {
+	padding: 0;
+}
+
+.detail-page h1 {
+	font-size: 1.5em;
+	margin-top: 0;
+	line-height: 0.75em;
+}
+
+.detail-metadata {
+	border: none;
+	table-layout: fixed;
+}
+
+/*.detail-metadata tr:nth-of-type(even) {
+	background: none;
+}*/
+
+.detail-metadata tr td:nth-of-type(even) {
+	margin-right: 4em;
+	/*max-width: 18em;*/
+}
+
+.detail-metadata td {
+	vertical-align: top;
+	padding: 0.4375em 0;
+	word-wrap: break-word;
+}
+
+.detail-metadata td:nth-of-type(odd) {
+	padding-right: 1.25em;
+	/*min-width: 9em;*/
+}
+
+.large-asset {
+	margin-bottom: 0.9375em;
+}
+
+.recommendations h2 {
+	font-size: 1.25em;
+}
+
+.recommendations ul {
+	list-style: none;
+}
+
+.recommendations ul li {
+	float: left;
+	width: 7.55em;
+	margin-right: 0.625em;
+	margin-bottom: 0.625em;
+}
+
+.recommendations .last-recommendation {
+	margin-right: 0;
+}
+
+.detail-page hr {
+	margin-right: 0;
+}
